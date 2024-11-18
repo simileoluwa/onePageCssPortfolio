@@ -1,0 +1,385 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
+
+body {
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: system-ui, sans-serif;
+  font-weight: normal;
+  line-height: 1.6;
+  background: no-repeat top right url(../images/profilePics.svg);
+  box-sizing: border-box;
+  background-color: #e5e5e5;
+}
+
+/* Set Images Properly with max-width */
+img {
+  max-width: 100%; /* [1] */
+  height: auto; /* [1] */
+  vertical-align: middle; /* [2] */
+  font-style: italic; /* [3] */
+  background-repeat: no-repeat; /* [4] */
+  background-size: cover; /* [4] */
+  shape-margin: 0.75rem; /* [5] */
+}
+
+#container {
+  /* width: 100%; */
+}
+
+.flexi {
+  display: flex;
+}
+
+#header {
+  padding: 1rem 12%;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 1rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  text-decoration: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #00040f;
+}
+
+header nav ul li a:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo {
+  font-family: ui-rounded, "Hiragino Maru Gothic ProN", Quicksand, Comfortaa,
+    Manjari, "Arial Rounded MT", "Arial Rounded MT Bold", Calibri,
+    source-sans-pro, sans-serif;
+  /* font-weight: 700; */
+  font-size: 1.5rem;
+  color: #00040f;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero {
+  width: 50%;
+  margin-block: 3rem;
+}
+
+.hero-left h4 {
+  color: #fdc435;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
+    serif;
+
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.hero-left p {
+  color: #828282;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  margin-block: 2rem;
+}
+
+.cta-button {
+  color: #00040f;
+  padding: 0.5rem 2rem;
+  border-radius: 0.6rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border: none;
+}
+
+.active {
+  background-color: #fdc435;
+}
+.activeborder {
+  border: 1px solid #00040f;
+}
+
+.cta-button:hover {
+  background-color: #00040f;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+#contact {
+  padding: 1rem 18%;
+  margin-block-end: 3rem;
+  text-align: center;
+}
+
+#projects {
+  padding: 1rem 18%;
+  margin-block-start: 3rem;
+}
+
+#projects h2,
+#contact h2 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
+    serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-decoration: solid underline #fdc435;
+  text-underline-offset: 1rem;
+}
+
+.projects-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 4rem;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  height: 24rem;
+}
+
+.projects-card {
+  width: 50%;
+  padding: 5rem;
+}
+
+.projects-card-brand {
+  width: 50%;
+}
+
+.projects-card-brand img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.projects-card h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.projects-card p {
+  color: #828282;
+  margin-block: 1.8rem;
+}
+
+.projects-main button {
+  padding: 0.5rem 2rem;
+  border-radius: 10rem;
+  border: 1px solid #00040f;
+  color: #00040f;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+.projects-main button:hover {
+  background-color: #00040f;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+/* .contact-form{
+  background-color: #0073a4;
+} */
+
+.contact-form {
+  /* width: 500px; */
+  /* margin-block-start: 3rem; */
+  width: 30rem;
+  margin-inline: auto;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.form-control label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-weight: 600;
+}
+
+.form-control input,
+.form-control textarea {
+  border: 1px solid #e8ecf4;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-control textarea {
+  resize: none;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline: none;
+  border-color: #fdc435;
+}
+
+input[type="submit"] {
+  background-color: #00040f;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  width: 100%;
+  /* width: 40%; */
+  border-radius: 0.3rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #fdc435;
+  color: #00040f;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  outline: none;
+}
+
+footer {
+  padding: 1rem 18%;
+  text-align: center;
+}
+
+/* Social Icons */
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.socials {
+  margin-block-end: 1rem;
+}
+
+.social-icon {
+  color: #fff;
+}
+
+.social-icon ul {
+  list-style-type: none;
+}
+
+.social-icons li {
+  /* vertical-align: top; */
+  display: inline;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
+}
+
+.fa-facebook:hover {
+  background-color: #3d5b99;
+}
+
+.fa-twitter {
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
+}
+
+.fa-twitter:hover {
+  background-color: #00aced;
+}
+
+.fa-tiktok {
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
+}
+
+.fa-tiktok:hover {
+  background-color: #eb8231;
+}
+
+.fa-youtube {
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
+}
+
+.fa-youtube:hover {
+  background-color: #e64a41;
+}
+
+.fa-linkedin {
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
+}
+
+.fa-linkedin:hover {
+  background-color: #0073a4;
+}
+
+.copyright {
+  color: #828282;
+  font-size: 0.8rem;
+}
