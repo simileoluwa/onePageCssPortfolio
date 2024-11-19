@@ -9,121 +9,119 @@
     <link rel="stylesheet" href="style/style.css" type="text/css" />
   </head>
   <body>
-    <div id="container">
-      <section id="header">
-        <header class="flexi">
-          <div class="logo">Simileoluwa Oludare</div>
-          <nav>
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
-        <div class="hero">
-          <div class="hero-left">
-            <h4>Software Engineering | Frontend</h4>
-            <h3 class="hero-title">Hello, My name is Simileoluwa Oludare</h3>
-            <p>
-              I am a passionate and dedicated individual who is eager to make a
-              significant contribution to the world of technology. With a deep
-              understanding of the latest advancements in the field, I am
-              committed to honing my skills and expertise in the ever-evolving
-              field of technology.
-            </p>
-            <div class="flexi">
-              <div class="cta-button active">Projects</div> 
-              <div class="cta-button activeborder">LinkedIn</div>
-            </div>
+      <section id="home--header">
+          <div class="wrapper-hero">
+            <header>
+              <div class="logo">Simileoluwa Oludare</div>
+              <nav>
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Projects</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+              </nav>
+            </header>
+
+            <div class="hero">
+              <div class="hero__left">
+                <span class="job-title">Software Engineering | Frontend</span>
+                <h3 class="hero__left--title">Hello, My name is Simileoluwa Oludare</h3>
+                <p class="hero__left--details">
+                  I am a passionate and dedicated individual who is eager to make a
+                  significant contribution to the world of technology. With a deep
+                  understanding of the latest advancements in the field, I am
+                  committed to honing my skills and expertise in the ever-evolving
+                  field of technology.
+                </p>
+                <div class="hero__left-cta">
+                  <div class="cta-button active">Projects</div> 
+                  <div class="cta-button activeborder">LinkedIn</div>
+                </div>
+              </div>
+
           </div>
       </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-main">
+      <section>
+          <div class="wrapper-projects">
+            <h2 class="captions">Projects</h2>
+
+            <div class="projects-main">
+            
+              <div class="projects-card">
+                  <h4 class="projects-card--title">Cupcakes</h4>
+                  <p class="projects-card--content">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+                  <button class="projects-card--button">View Project</button>
+              </div>
+              <div class="projects-card-brand">
+                <img src="images/cupcake.jpg" alt="">
+              </div>
+          </div>
+  
+          <div class="projects-main">
+                <div class="projects-card-brand">
+                <img src="images/freight.jpg" alt="">
+  
+                </div>
+              <div class="projects-card">
+                  <h4 class="projects-card--title">Partner Frieght</h4>
+                  <p class="projects-card--content">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+                  <button class="projects-card--button">View Project</button>
+              </div>
+              
+          </div>
+  
+          <div class="projects-main">
             
             <div class="projects-card">
-                <h4>Cupcakes</h4>
-                <p>I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
-                <button>View Project</button>
+                <h4 class="projects-card--title">Cupcakes</h4>
+                <p class="projects-card--content">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+                <button class="projects-card--button">View Project</button>
             </div>
             <div class="projects-card-brand">
-              <img src="images/cupcake.jpg" alt="">
+              <img src="images/simo.jpg" alt="">
             </div>
         </div>
 
-        <div class="projects-main">
-              <div class="projects-card-brand">
-              <img src="images/freight.jpg" alt="">
-
-              </div>
-            <div class="projects-card">
-                <h4>Partner Frieght</h4>
-                <p>I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
-                <button>View Project</button>
-            </div>
-            
-        </div>
-
-        <div class="projects-main">
-          
-        <div class="projects-card">
-            <h4>Simileoluwa Ports</h4>
-            <p>I am a passionate and dedicated individual who is eager to make a significant contribution to the world of technology.</p>
-            <button>View Project</button>
-        </div>
-
-        <div class="projects-card-brand">
-          <img src="images/simo.jpg" alt="">
-
           </div>
-        
-    </div>
-
-        <!-- <div class="projects-main">
-            
-          <div class="projects-card">
-              <h4>Project Name</h4>
-              <p>I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
-              <button>View Project</button>
-          </div>
-          <div class="projects-card-brand">
-            <img src="images/4.png" alt="">
-          </div>
-      </div> -->
       </section>
 
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <div class="contact-form">
-          <form action="">
-            <div class="form-control">
-              <label for="firstname">Firstname</label>
-              <input type="text" placeholder="Enter your firstname" />
+      <section>
+          <div class="wrapper">
+            <h2 class="captions">Contact Us</h2>
+
+            <div class="contact-form">
+              <form action="">
+                <div class="form-control">
+                  <label for="firstname">Firstname</label>
+                  <input type="text" placeholder="Enter your firstname" />
+                </div>
+                <div class="form-control">
+                  <label for="email">Email Address</label>
+                  <input type="email" placeholder="Please type your email" />
+                </div>
+                <div class="form-control">
+                  <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Type your message in details"
+                ></textarea>
+                </div>
+                <input type="submit" value="Submit">
+                <!-- <button>Send us a message now</button> -->
+              </form>
             </div>
-            <div class="form-control">
-              <label for="email">Email Address</label>
-              <input type="email" placeholder="Please type your email" />
-            </div>
-            <div class="form-control">
-              <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Type your message in details"
-            ></textarea>
-            </div>
-            <input type="submit" value="Submit">
-            <!-- <button>Send us a message now</button> -->
-          </form>
-        </div>
+          </div>        
       </section>
 
       <footer>
-        <div class="footer-icon">
+
+        <div class="wrapper">
+        
+          <div class="footer-icon">
             <div class="socials">
               <ul class="social-icons">
               <li><a href="" class="social-icon"> <i class="fab fa-facebook"></i></a></li>
@@ -138,7 +136,10 @@
             <div class="copyright"><p>Copyright © 2021 Simileoluwa Oludare. All Rights Reserved.</p></div>
             
         </div>
+        </div>
+
+        
       </footer>
-    </div>
+    
   </body>
 </html>

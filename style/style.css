@@ -9,8 +9,7 @@ body {
   font-family: system-ui, sans-serif;
   font-weight: normal;
   line-height: 1.6;
-  background-color: #e5e5e5;
-  margin: 0;
+  background-color: #f9faff;
 }
 
 /* Set Images Properly with max-width */
@@ -22,4 +21,241 @@ img {
   background-repeat: no-repeat; /* [4] */
   background-size: cover; /* [4] */
   shape-margin: 0.75rem; /* [5] */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
+    serif;
+  font-weight: normal;
+}
+
+#home--header {
+  background: url("../images/profilePics.svg") no-repeat top right;
+  background-size: contain;
+}
+
+.wrapper-hero {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.rowflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li + li {
+  margin-left: 1em;
+}
+
+.hero {
+  padding-block-start: 17em;
+}
+
+.hero__left {
+  width: 100%;
+}
+
+.job-title {
+  font-size: 0.8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fdc435;
+  margin-block: 1em;
+}
+
+.hero__left--title {
+  font-size: 2.8em;
+  margin: 0;
+  line-height: 1.2em;
+}
+
+.hero__left--details {
+  font-size: 1.2em;
+  margin-block: 1em;
+  line-height: 1.8em;
+}
+
+.hero__left-cta {
+  /* display: flex; */
+  /* align-items: center; */
+  gap: 1em;
+}
+
+.cta-button {
+  padding: 0.5em 2em;
+  outline: 0;
+  border-radius: 0.5em;
+  /* border: 1px solid #25282b; */
+  text-align: center;
+  width: 100%;
+  margin-block: 1em;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-button.active {
+  background-color: #fdc435;
+  color: #25282b;
+}
+
+.cta-button.activeborder {
+  background-color: #fff;
+  color: #25282b;
+  border: 1px solid #25282b;
+}
+
+.cta-button.active:hover {
+  background-color: #25282b;
+  color: #fff;
+}
+
+.cta-button.activeborder:hover {
+  background-color: #0a66c2;
+  color: #fff;
+  border: 1px solid #0a66c2;
+}
+
+section {
+  /* padding-block: 1em; */
+}
+
+.wrapper-projects {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  /* padding: 1em 0; */
+}
+
+.captions {
+  margin: 0;
+  text-align: center;
+  margin-block: 1em;
+  font-weight: 600;
+  font-size: 2em;
+  text-decoration: underline;
+  text-decoration-color: #fdc435;
+  text-underline-offset: 0.2em;
+  /* text-decoration-thickness: 0.2em; */
+}
+
+.projects-main {
+  background: #fff;
+  padding: 1em 2em;
+  margin-block: 2em;
+}
+
+.projects-card {
+  /* width: 100%; */
+  margin-block: 1em;
+}
+
+.projects-card--title {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.projects-card--content {
+  font-size: 1.125;
+  /* margin-block: 1em; */
+  color: #828282;
+}
+
+.projects-card--button {
+  padding: 0.5em 2em;
+  border-radius: 20em;
+  border: 1px solid #828282;
+  background: none;
+  width: 100%;
+  margin-block: 1em;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.projects-card--button:hover {
+  background-color: #fdc435;
+  color: #25282b;
+  border: 1px solid #fdc435;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  /* padding: 1em 0; */
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.form-control {
+  margin-block: 1.5em;
+}
+
+.form-control label {
+  display: block;
+  margin-block: 0.3em;
+  font-weight: 600;
+}
+
+.form-control input,
+textarea {
+  border-radius: 0.5em;
+  border: 1px solid #e8ecf4;
+  display: block;
+  width: 100%;
+  padding: 0.8em;
+}
+
+.form-control input:focus,
+textarea:focus {
+  border: 1px solid #828282;
+  outline: 0;
+}
+
+.form-control textarea {
+  resize: none; /* [1] */
+  height: 10em; /* [2] */
+}
+
+input[type="submit"] {
+  padding: 0.5em 2em;
+  outline: 0;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #fdc435;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #25282b;
+  color: #fff;
+}
+
+.footer-icon {
+  margin-block: 2em;
 }
