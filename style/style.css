@@ -1,5 +1,9 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -408,7 +412,7 @@ input[type="submit"]:hover {
   .projects-main {
     display: flex;
     justify-content: space-between;
-    /* margin-block: 2em; */
+    margin-block: 4em;
     height: 24rem;
     overflow: hidden;
     align-items: center;
@@ -434,7 +438,7 @@ input[type="submit"]:hover {
   }
 
   .projects-card--button {
-    width: 50%;
+    width: auto;
   }
 
   .contact-form {
