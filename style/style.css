@@ -1,13 +1,16 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   /* font-family: 'Poppins', sans-serif; */
   font-family: system-ui, sans-serif;
   font-weight: normal;
   line-height: 1.6;
-  background: no-repeat top right url(../images/profilePics.svg);
-  box-sizing: border-box;
   background-color: #e5e5e5;
+  margin: 0;
 }
 
 /* Set Images Properly with max-width */
@@ -22,7 +25,8 @@ img {
 }
 
 #container {
-  /* width: 100%; */
+  background: no-repeat top right url(../images/profilePics.svg);
+  /* width: auto; */
 }
 
 .flexi {
@@ -37,6 +41,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-block: 1rem;
+  flex-wrap: wrap;
 }
 
 header nav ul {
