@@ -42,6 +42,7 @@ h4 {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 1.5em 0;
 }
 
 .rowflex {
@@ -50,25 +51,45 @@ h4 {
 }
 
 .logo {
-  text-align: center;
+  /* text-align: center; */
+  width: 100%;
+  font-size: 1.5em;
+  font-family: ui-rounded, "Hiragino Maru Gothic ProN", Quicksand, Comfortaa,
+    Manjari, "Arial Rounded MT", "Arial Rounded MT Bold", Calibri,
+    source-sans-pro, sans-serif;
+  font-weight: 600;
 }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 2em;
+  width: 100%;
 }
 
 nav ul li {
-  display: inline-block;
+  /* display: inline-block; */
 }
 
-nav ul li + li {
-  margin-left: 1em;
+nav ul li a {
+  text-decoration: none;
+  color: #25282b;
 }
+
+nav ul li a:hover {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+/* nav ul li + li {
+  margin-left: 1em;
+} */
 
 .hero {
   padding-block-start: 17em;
+  /* width: 100%; */
 }
 
 .hero__left {
@@ -85,6 +106,7 @@ nav ul li + li {
 
 .hero__left--title {
   font-size: 2.8em;
+  font-weight: 600;
   margin: 0;
   line-height: 1.2em;
 }
@@ -141,7 +163,7 @@ section {
 
 .wrapper-projects {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   /* padding: 1em 0; */
 }
@@ -160,13 +182,20 @@ section {
 
 .projects-main {
   background: #fff;
-  padding: 1em 2em;
+  /* padding: 1em 2em; */
   margin-block: 2em;
+  border-radius: 1.5rem;
 }
 
 .projects-card {
-  /* width: 100%; */
+  width: 100%;
   margin-block: 1em;
+  padding: 1em 2em;
+}
+
+.projects-card-brand img {
+  object-fit: cover;
+  width: 100%;
 }
 
 .projects-card--title {
@@ -177,7 +206,7 @@ section {
 
 .projects-card--content {
   font-size: 1.125;
-  /* margin-block: 1em; */
+  margin-block: 1em;
   color: #828282;
 }
 
@@ -256,6 +285,160 @@ input[type="submit"]:hover {
   color: #fff;
 }
 
+/* Social Icons */
+
 .footer-icon {
   margin-block: 2em;
+  text-align: center;
+}
+
+.socials {
+  margin-block: 1rem;
+}
+
+.socials ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.social-icon {
+  color: #fff;
+}
+
+.social-icons li {
+  /* vertical-align: top; */
+  display: inline;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
+}
+
+.fa-facebook:hover {
+  background-color: #3d5b99;
+}
+
+.fa-twitter {
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
+}
+
+.fa-twitter:hover {
+  background-color: #00aced;
+}
+
+.fa-tiktok {
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
+}
+
+.fa-tiktok:hover {
+  background-color: #eb8231;
+}
+
+.fa-youtube {
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
+}
+
+.fa-youtube:hover {
+  background-color: #e64a41;
+}
+
+.fa-linkedin {
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
+}
+
+.fa-linkedin:hover {
+  background-color: #0073a4;
+}
+
+.copyright {
+  color: #828282;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 600px) {
+  .hero {
+    padding-block-start: 3em;
+    /* width: 100%; */
+  }
+
+  .hero__left {
+    width: 50%;
+  }
+
+  .hero__left-cta {
+    display: flex;
+  }
+
+  .projects-main {
+    display: flex;
+    justify-content: space-between;
+    /* margin-block: 2em; */
+    height: 24rem;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .projects-card {
+    /* width: 40%; */
+    width: 50%;
+    padding-inline: 3em;
+  }
+
+  .projects-card-brand {
+    width: 50%;
+  }
+
+  .projects-card-brand img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .projects-card--content {
+    margin-block: 1em;
+  }
+
+  .projects-card--button {
+    width: 50%;
+  }
+
+  .contact-form {
+    width: 50%;
+    margin-inline: auto;
+  }
 }
